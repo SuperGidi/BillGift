@@ -1,0 +1,63 @@
+
+<button id="button" onclick="alert('Thank You Koumbare'); window.open('https://www.e-shop.gr/laptop-dell-inspiron-3511-156-fhd-intel-core-i7-1165g7-8gb-512gb-ssd-win11-p-PER.903697')" <button id="button" style="background-color: #000000;
+border: none;
+color: #FFFF00;
+padding: 1.5cm;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 50%;" onmouseover="this.style.backgroundColor='#FF0000';" onmouseout="this.style.backgroundColor='#000000';" onclick="alert('You clicked the button!')">Push Me Bill</button>
+
+
+<script>
+  function moveButton() {
+    let x = Math.floor((Math.random() * window.innerWidth) + 1);
+    let y = Math.floor((Math.random() * window.innerHeight) + 1);
+
+    let xDifference = Math.abs(document.getElementById('button').getBoundingClientRect().left - x);
+    let yDifference = Math.abs(document.getElementById('button').getBoundingClientRect().top - y);
+
+    let xStep = xDifference / 3;
+    let yStep = yDifference / 3;
+
+    let currentX = document.getElementById('button').getBoundingClientRect().left;
+    let currentY = document.getElementById('button').getBoundingClientRect().top;
+
+    let xDirection = (x - currentX) > 0 ? 1 : -1;
+    let yDirection = (y - currentY) > 0 ? 1 : -1;
+
+    document.getElementById('button').style.position = 'absolute';
+    document.getElementById('button').style
+
+      <
+      script >
+      let xDirection = 1;
+    let yDirection = 1;
+
+    document.getElementById("button").onmouseover = function() {
+      let x = Math.floor((Math.random() * window.innerWidth) + 1);
+      let y = Math.floor((Math.random() * window.innerHeight) + 1);
+      document.getElementById('button').style.position = 'absolute';
+      document.getElementById('button').style.left = x + 'px';
+      document.getElementById('button').style.top = y + 'px';
+
+      xDirection = (x - currentX) > 0 ? 1 : -1;
+      yDirection = (y - currentY) > 0 ? 1 : -1;
+    }
+
+</script>
+
+<script>
+  function moveButton() {
+    var x = Math.floor((Math.random() * window.innerWidth) + 1);
+    var y = Math.floor((Math.random() * window.innerHeight) + 1);
+
+    document.getElementById('button').style.position = 'absolute';
+    document.getElementById('button').style.left = x + 'px';
+    document.getElementById('button').style.top = y + 'px';
+  }
+
+  setInterval(moveButton, 1000);
+
+</script>
